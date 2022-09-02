@@ -1,0 +1,118 @@
+  body {
+    background: url('/src/img/fundo.jpg') no-repeat fixed center;
+    backdrop-filter: blur(2px) saturate(180%);
+    height: 100vh;
+  }
+  .cabecalho {
+    height: 10%;
+  }
+
+  .cabecalho__titulo {
+    padding: 15px;
+    color: #fff;
+    font-size: 2.4rem; 
+    font-weight: bold; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .decodificador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+  }
+
+  .decodificador__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    backdrop-filter: blur(1px) saturate(100%);
+    -webkit-backdrop-filter: blur(1px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.49);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 1rem .4rem;
+  }
+
+  .decodificador__caixa-titulo {
+    padding: 15px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .decodificador__caixa-textarea {
+    width: 300px;
+    height: 100px;
+    resize: none;
+    font-size: .9rem;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem ;
+    font-family: 'Roboto', sans-serif;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    backdrop-filter: blur(8px) saturate(100%);
+    -webkit-backdrop-filter: blur(8px) saturate(100%);
+    background-color: rgba(50, 143, 219, 0.61);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    text-transform: lowercase;
+  }
+
+  .decodificador__caixa-textarea:focus {
+    outline: 0;
+  }
+
+  .decodificador__caixa-textarea::placeholder {
+    color: rgb(194, 194, 194);
+  }
+
+  .decodificador__caixa-botao {
+      border: none;
+      color:#fff;
+      background: #169bd8;
+      border-radius: 5px 5px;
+      padding: 5px;
+      font-size: 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+
+  .decodificador__caixa-botao:hover {
+    background: #fff;
+    color: #191A19 ;
+
+    transform: scale(0.9);
+    transition-duration: 0.5s;    
+  }
+
+  @media screen and (min-width: 768px) {
+    .decodificador {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 2rem 2rem;
+      height: 60.5%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .decodificador {
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 0 0;
+      height: 75%;
+    }
+  }

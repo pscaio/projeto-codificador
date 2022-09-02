@@ -1,34 +1,20 @@
-/* Regras Codificador:
-"e" é convertido para "enter"
-"i" é convertido para "imes"
-"a" é convertido para "ai"
-"o" é convertido para "ober"
-"u" é convertido para "ufat"
-Apenas letras minúsculas
-Não permite acentuação
-*/
+// Codigo antigo caso queira comparar
 var bottonCodificar = document.querySelector(".botao-cripto");
+
 bottonCodificar.addEventListener("click", function(event){
   event.preventDefault();
-  
+
   var areText = document.querySelector(".entrada-texto");
   var texto = areText.value;
   var novoTexto = codificaTexto(texto);
+ 
   var msgOut = document.querySelector(".saida-texto");
   msgOut.value = novoTexto;
+  
   var form = document.querySelector(".cript");
   form.reset();
 
 } );
-
-var bottonCopiar = document.querySelector(".botao-copiar");
-  bottonCopiar.addEventListener("click", function(event){
-    
-    var texCopia = document.querySelector(".saida-texto");
-    
-    navigator.clipboard.writeText(texCopia.value);
-    texCopia.value = '';
-  })
 
 function codificaTexto(texto){
   var novoTexto = texto;
@@ -57,7 +43,6 @@ bottonDecodificar.addEventListener("click", function(event){
     var formr = document.querySelector(".cript");
   formr.reset();
 
-
 } );
 
 function decodificaTexto(texto){
@@ -66,3 +51,12 @@ function decodificaTexto(texto){
   novoTexto = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi,"u");
   return novoTexto;
 }
+
+var bottonCopiar = document.querySelector(".botao-copiar");
+  bottonCopiar.addEventListener("click", function(event){
+    
+    var texCopia = document.querySelector(".saida-texto");
+    
+    navigator.clipboard.writeText(texCopia.value);
+    texCopia.value = '';
+  })

@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title> Decodificador | pscaio</title>
+  <link href="src/css/reset.css" rel="stylesheet">
+  <link href="src/css/style.css" rel="stylesheet">
+  <link href="src/css/rodape.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <h1 class="cabecalho__titulo">Decodificador</h1>
+  </header>
   
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador | pscaio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-    <body>
-      
-      <main>
-        <h1 class="titulo">_Decodificador </h1>
-
-          <div class="tudo">
-
-            <section class="box">
-              
-                <form class="cript">
-                  
-                  <label class="titulo-box" for="input-texto">Mensagem</label>
-                  <textarea class="entrada-texto" type="text" name="entrada-texto" placeholder="Insira o texto aqui"></textarea>
-                  
-                  <div class="botao">                
-                    <input class="botao-cripto" type="submit" value="Criptografar" >
-                    <input class="botao-descripto" type="submit" value="Descriptografar" >
-                  </div>
-
-                </form>
-            </section>
-
-            <section class="box">
-              
-                <label class="titulo-box" for="cript2" >Mensagem criptografada</label>
-                <textarea class="saida-texto" type="text" name="saida-texto" placeholder="Aqui aparecerá seu texto"></textarea>
-                
-                <div class="botao">
-                  <input class="botao-copiar" type="submit" value="Copiar Mensagem" >
-                </div>
-
-            </section>
-
-          </div>
-      </main>
-
-      <footer>
-        <p class="copyright">&copy; Copyright Pscaio - 2022</p>
-      </footer>
-      
-      <script src="script.js"></script> 
-    </body>
+  <section class="decodificador">
+    <div class="decodificador__caixa">
+      <form class="cript" data-form-criptografar>
   
+        <h1 class="decodificador__caixa-titulo">Mensagem</h1>
+  
+        <textarea class="decodificador__caixa-textarea" data-entrada-texto type="text" name="entrada-texto"
+          placeholder="Insira o texto aqui"></textarea>
+  
+        <div class="decodificador__caixa-botoes">
+          <input class="decodificador__caixa-botao" data-botao-cript type="submit" value="Criptografar">
+          <input class="decodificador__caixa-botao" data-botao-descript type="submit" value="Descriptografar">
+        </div>
+  
+      </form>
+    </div>
+  
+    <div class="decodificador__caixa">
+      <h1 class="decodificador__caixa-titulo">Mensagem criptografada</h1>
+  
+      <textarea class="decodificador__caixa-textarea" data-saida-texto type="text" name="saida-texto"
+        placeholder="Aqui aparecerá sua mensagem"></textarea>
+  
+      <div>
+        <input class="decodificador__caixa-botao" data-botao-copiar type="submit" value="Copiar">
+      </div>
+  
+    </div>
+  </section>
+  
+  <footer class="rodape">
+    <p class="rodape__paragrafo">Desenvolvido por Caio Pereira 2022 &copy; </p>
+    <ul class="rodape__social">
+      <li>
+        <a href="https://www.linkedin.com/in/pscaio/" target="_blank" rel="noopener noreferrer" class="rodape__midia"><img
+            class="icon-social" src="src/img/redes/linkedin.png" alt="Linkedin"></a>
+      </li>
+      <li>
+        <a href="https://github.com/pscaio" target="_blank" rel="noopener noreferrer" class="rodape__midia"><img
+            class="icon-social" src="src/img/redes/github.png" alt="Github"></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/p.scaio/" target="_blank" rel="noopener noreferrer" class="rodape__midia"><img
+            class="icon-social" src="src/img/redes/instagram.png" alt="Instagram"></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/pscaio_" target="_blank" rel="noopener noreferrer" class="rodape__midia"><img
+            class="icon-social" src="src/img/redes/twitter.png" alt="Twitter"></a>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="src/js/newscript.js"></script>
+  </body>
+
 </html>

@@ -1,0 +1,10 @@
+Regras Codificador:
+
+"a" é convertido para "ai"
+"e" é convertido para "enter"
+"i" é convertido para "imes"
+"o" é convertido para "ober"
+"u" é convertido para "ufat"
+
+Apenas letras minúsculas
+Não permite acentuação
