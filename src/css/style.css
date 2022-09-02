@@ -1,5 +1,5 @@
   body {
-    background: url('/src/img/fundo.jpg') no-repeat fixed center;
+    background: url('../img/fundo.jpg') no-repeat fixed center;
     backdrop-filter: blur(2px) saturate(180%);
     height: 100vh;
   }
